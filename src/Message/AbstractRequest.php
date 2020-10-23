@@ -271,4 +271,8 @@ abstract class AbstractRequest extends OmnipayAbstractRequest
     {
         return $this->getParameter('customerTaxId');
     }
+
+    public function setIncludeIssuerInfo($value) {
+        return $this->setParameter('includeIssuerInfo', $value);
+    }
 }
